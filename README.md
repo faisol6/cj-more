@@ -29,17 +29,21 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## How to use Taginput components
+## How to use Taginput component
 
+Import the `TagInput` component into your project:
+
+```jsx
 import TagInput from './components/TagInput';
 
 function App() {
   return (
     <div>
-      <TagInput maxTags={5} />
+      <TagInput maxTags={5} separators={[";", ",", " ", "\t"]} />
     </div>
   );
 }
+```
 
 ### Props:
 
