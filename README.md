@@ -22,6 +22,7 @@ function App() {
 
 - **maxTags**: (number): The maximum number of tags that can be added. If the number of tags exceeds this limit, no more tags can be added.<br/>
 **Example**: maxTags={5},
+
 - **Add Tags**: : (string[]): Custom separators for multiple tags (e.g., comma, semicolon, space, tab).<br/>
 **Example**: separators={[";", ",", " ", "\t"]}
   This allows users to separate tags by any of the specified characters.
