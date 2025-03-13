@@ -34,11 +34,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 import TagInput from './components/TagInput';
 
 function App() {
-  return (
-    <div>
-      <TagInput maxTags={5} />
-    </div>
-  );
+  return <TagInput maxTags={5} />;
 }
 
 ### Props:
