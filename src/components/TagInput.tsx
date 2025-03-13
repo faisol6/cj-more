@@ -8,7 +8,7 @@ interface TagInputProps {
 
 const TagInput: React.FC<TagInputProps> = ({
   maxTags = 5,
-  separators = [",", ";", "|", " "],
+  separators = [",", ";", "|", " ", "\t"],
 }) => {
   const [tags, setTags] = useState<string[]>([]);
   const [inputValue, setInputValue] = useState<string>("");
@@ -23,7 +23,7 @@ const TagInput: React.FC<TagInputProps> = ({
       .map((tag) => tag.trim())
       .filter((tag) => tag);
     const uniqueNewTags = newTags.filter((tag) => !tags.includes(tag));
-    
+
     if (tags.length + uniqueNewTags.length > maxTags) {
       setWarningMessage("You have reached the maximum number of tags!");
       return;
