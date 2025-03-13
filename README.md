@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Import the `TagInput` component into your project:
 
 ```jsx
-import TagInput from './components/TagInput';
+import TagInput from "./components/TagInput";
 
 function App() {
   return (
@@ -20,22 +20,21 @@ function App() {
 
 ### Props:
 
-- **maxTags**: (number): The maximum number of tags that can be added. If the number of tags exceeds this limit, no more tags can be added.<br>
- - **Example**: maxTags={5},
-- **Add Tags**: : (string[]): Custom separators for multiple tags (e.g., comma, semicolon, space, tab).<br>
- - **Example**: separators={[";", ",", " ", "\t"]}
-This allows users to separate tags by any of the specified characters.
+- **maxTags**: (number): The maximum number of tags that can be added. If the number of tags exceeds this limit, no more tags can be added.
+**Example**: maxTags={5},
+- **Add Tags**: : (string[]): Custom separators for multiple tags (e.g., comma, semicolon, space, tab).
+**Example**: separators={[";", ",", " ", "\t"]}
+  This allows users to separate tags by any of the specified characters.
 
 **Note**: Both maxTags and separators are optional props.
 
-
 ### Features:
+
 - **Add Tags**: Users can add tags by typing and pressing Enter or using the provided separators..
 - **Remove Tags**: Users can remove tags by clicking the "❌" button next to each tag.
 - **Tag Limit**: The number of tags can be limited by setting the maxTags prop.
 - **Custom Separators**: Define custom separators (e.g., semicolon, comma, space) for multiple tags in a single input field.
 - **Warning Message**: A warning message will appear when the tag limit is reached.
-
 
 ## Available Scripts
 
