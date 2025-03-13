@@ -1,0 +1,48 @@
+.tagInputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  
+  .tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .tag {
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    margin: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tag button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    padding: 4px;
+    flex: 1;
+    min-height: 30px;
+  }
+
+  .warningMessage {
+    text-align: left;
+    padding-left: 10px;
+    color: red;
+    height: 35px;
+  }
